@@ -153,16 +153,6 @@ chatbot-from-scratch/
 ├── level0_neuron.py ... level4_transformer.py   # jejak belajar dari nol
 └── logs/, gambar/           # hasil runtime (riwayat chat, gambar generated)
 ```
-
----
-
-## 🔒 Soal keamanan
-
-- **Jangan pernah** commit `tools_privat.py` — udah di-`.gitignore`, tapi tetep double-check sebelum `git push` kalau paranoid.
-- API key Gemini di `tools_privat.py` cuma buat testing lokal kamu sendiri.
-- Fitur manajemen folder & mode agen (`/agen`) **selalu** dibatesin folder yang udah eksplisit di-`/izinkan` — gak ada cara buat AI-nya nyolong akses ke folder lain, termasuk lewat trik path (`../../dst`) yang udah dicek & diblok.
-- Command yang ngubah/hapus/jalanin sesuatu **selalu** minta konfirmasi dulu (kecuali `/beresin` & `/bersihkan` yang emang sengaja dibikin 1-konfirmasi-buat-semua biar gak capek nge-`y` satu-satu, tapi tetep nunjukin dulu apa yang bakal kejadian).
-
 ---
 
 ## 🗺️ Roadmap / masih pengen ditambahin
