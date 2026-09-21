@@ -1,0 +1,56 @@
+{
+  "model": {
+    "d_model": 128,
+    "n_heads": 8,
+    "n_layers": 3,
+    "d_ff": 256,
+    "dropout": 0.15,
+    "max_len": 104
+  },
+  "training": {
+    "learning_rate": 0.003,
+    "epochs": 300,
+    "batch_size": 64,
+    "log_every": 10,
+    "grad_clip": 1.0
+  },
+  "generation": {
+    "default_temperature": 0.7,
+    "max_new_tokens": 12
+  },
+  "paths": {
+    "data_file": "data/percakapan.json",
+    "model_path": "chatbot_model.pt",
+    "vocab_path": "chatbot_vocab.pkl"
+  },
+  "memory": {
+    "enabled": true,
+    "log_file": "logs/riwayat_chat.jsonl",
+    "show_last": 5
+  },
+  "tools": {
+    "todo_file": "data/todo.json",
+    "request_timeout": 10,
+    "pollinations_enabled": true,
+    "pollinations_models": [
+      "openai-fast"
+    ],
+    "pollinations_timeout": 15,
+    "pollinations_system": "Kamu adalah Akai, asisten AI yang santai dan ramah, jawab dalam bahasa Indonesia.",
+    "gambar_model": "flux",
+    "gambar_width": 1024,
+    "gambar_height": 1024,
+    "gambar_timeout": 60,
+    "gambar_folder": "gambar"
+  },
+  "telegram": {
+    "bot_token": "MASUKKAN_TOKEN_BOT_TELEGRAM_KAMU_DI_SINI",
+    "telegram_allowed_chat_ids": []
+  },
+  "file_manager": {
+    "allowed_folders": [
+      "C:\\Users\\M. Akhtar\\chatbot-from-scratch",
+      "C:\\Users\\M. Akhtar\\Downloads"
+    ]
+  }
+}
