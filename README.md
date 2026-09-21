@@ -114,8 +114,6 @@ copy tools_privat.example.py tools_privat.py    # Windows
 ```
 Buka `tools_privat.py`, ganti `MASUKKAN_API_KEY_GEMINI_KAMU_DI_SINI` sama API key asli kamu. Dapetin gratis di [aistudio.google.com/apikey](https://aistudio.google.com/apikey).
 
-> ⚠️ `tools_privat.py` udah masuk `.gitignore` — JANGAN pernah hapus baris itu, dan jangan pernah paste API key asli ke file lain yang bakal di-push ke GitHub. Semua fitur/logic Gemini udah aman ada di `tools_publik.py` (isinya cuma placeholder), jadi aman di-share ke publik apa adanya.
-
 ### 5. Training (otomatis kalau model belum ada)
 ```bash
 python pytorch_chatbot.py
