@@ -162,7 +162,7 @@ chatbot-from-scratch/
 - [ ] Voice mode?
 - [ ] Aktifin lagi integrasi Telegram (`telegram_bot.py` udah setengah jadi, tinggal disambung)
 
-PR & ide selalu diterima (kalau ini udah publik ya 😄).
+PR & ide selalu diterima
 
 ---
 
